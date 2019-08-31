@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HDG3D</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link
+href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600%7CSource+Code+Pro"
+      rel="stylesheet">
+    <!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+    <script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+    <script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>
+  </head>
+  <body>
+    <div id="header_container">
+      <div class="container">
+        <!-- Header -->
+        <div id="header" class="row">
+          <div class="4u">
+            <div class="transparent">
+              <h1><a href="index.html">HDG3D</a></h1>
+              <h1><a href="index.html"> <span class="header_colour"></span></a></h1>
+              <h2><br>
+              </h2>
+            </div>
+          </div>
+          <nav id="main-nav" class="8u">
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="members.html">Members</a></li>
+              <li><a href="software.html">Download</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div id="banner_wrapper">
+      <div class="container">
+        <div id="banner"> <br>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="container">
+        <!-- Features -->
+        <div class="row">
+          <section class="12u">
+            <h1>Welcome to the beta version of the HDG3D website<br>
+            </h1>
+            In this website we provide our Matlab implementation of the
+            Hybridizable Discontinuous Galerkin method on general
+            tetrahedrizations of polyhedra in three dimensional space.
+            The code includes tools to solve variable diffusion and
+            convection-diffusion equations. The code was developed by
+            the numerical group <a href="./index.html">Team Pancho</a>
+            at the <a href="www.mathsci.udel.edu">Department of
+              Mathematical Sciences</a> at the <a href="www.udel.edu">University
+
+              of Delaware</a>. The code is fully documented, not too
+            tough to use, and quite easy to modify if you take your time
+            to learn how degrees of freedom are counted and what's the
+            general idea of HDG. In the near future, we'll add some
+            worked out examples and more capabilities that are being
+            developed. <br>
+          </section>
+        </div>
+        <div class="row">
+          <section class="4u"> </section>
+          <section class="4u">
+            <h3>Some literature</h3>
+            <ul>
+              <li>The <a
+                  href="http://epubs.siam.org/doi/abs/10.1137/070706616">paper</a>
+                that started it all, by Bernardo Cockburn, Jay
+                Gopalakrishnan and Raytcho Lazarov.</li>
+              <li>A <a href="http://arxiv.org/pdf/1307.2491.pdf">theoretical
+
+                  description</a> of HDG, for the FEM savvy</li>
+              <li>A <a href="http://dl.acm.org/citation.cfm?id=2786970">paper</a>
+                explaining how everything is easily coded (by L. Gatica,
+                F.J. Sayas, and Z. Fu)<br>
+              </li>
+            </ul>
+          </section>
+          <section class="4u">
+            <div id="sidebar">
+              <section class="12u">
+                <h3>Latest News</h3>
+                <h4>New Website Launched</h4>
+                <h5>September, 2016. </h5>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer><br>
+        <h2>The research leading to the HDG3D package was partially
+          funded by the National Science Foundation through the grant
+          NSF-DMS 1216356. Numerical simulation and analysis of
+          transient waves in unbounded domains.</h2>
+        <p><a href="index.html">Home</a> | <a href="members.html">Members</a>
+          | <a href="software.html">Download</a><a href="ACMTOMS.html"><br>
+          </a></p>
+        <p>Copyright © CSS3_waves | <a href="http://fotogrph.com/">Images</a>
+          | <a href="http://skeljs.org/">skel.js</a> | <a
+            href="http://www.css3templates.co.uk">design from
+            css3templates.co.uk</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

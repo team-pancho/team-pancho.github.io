@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;	
+} 
+body {
+background: #FFF6B9 url(bg.jpg) top left repeat-y;
+font-family: Arial, Tahoma, Verdana;
+font-size: 13px;
+padding: 0;
+margin: 0;
+color: #555;
+}
+
+img { 
+border: none 
+}
+
+a { 
+color: #880000;
+text-decoration: none;
+}
+
+a:visited {
+color: #880000;
+}
+
+a:hover {
+color: #000;
+}
+
+h1 { 
+font-family: georgia;
+font-size: 20px; 
+border-bottom: 1px solid #555;
+margin: 20px 0 20px 0;
+padding: 0 0 15px 0;
+text-align: center;
+color: #880000;
+}
+
+h2 { 
+color: #000;
+margin-bottom: 5px;
+margin-top: 15px;
+font-size: 16px;
+text-decoration: underline;
+}
+
+
+#wrap {
+width: 760px;
+}
+
+#content {
+float: left;
+width: 490px;
+text-align: justify;
+padding: 5px 10px 10px 20px;
+}
+
+.footer {
+margin-top: 40px;
+color: #999;
+border-top: 1px solid #aaa;
+text-align: center;
+font-size: 11px;
+}
+.footer a { color: #666; text-decoration: none;}
+.footer a:hover { color : #000; text-decoration: underline;}
+
+#menu {
+float: right;
+width: 200px;
+padding: 0 20px;
+text-align: justify;
+}
+#menu h2 { font-size: 12px; font-weight: 600; color : #000; padding: 15px 0 5px 5px; }
+#menu ul { list-style-type: square; padding-left: 20px; color : #880000;}
+#menu li{ padding: 3px 0 3px 0px; border-bottom: 1px dotted #777; }
+#menu li a { color : #880000; font-size: 12px; font-weight: 100; }
+#menu li a:hover { color : #000; text-decoration : none;}

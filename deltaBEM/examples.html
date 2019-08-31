@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>deltaBEM - Examples</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="wrapper clearfix">
+        <div id="logo"> <a href="index.html"><img
+              src="images/deltaBEMLogoWEB.png" alt="LOGO"></a> </div>
+        <ul id="navigation">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="about.html">About</a> </li>
+          <li class="selected"> <a href="examples.html">Examples</a> </li>
+          <li> <a href="articles.html">Articles</a> </li>
+          <li> <a href="download.html">Download</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div id="contents">
+      <div class="wrapper clearfix">
+        <div id="sidebar">
+          <ul>
+            <li> <br>
+              <br>
+              <br>
+              <br>
+              <a href="examples/scriptLaplace2bie.m"><img
+                  src="images/LaplaceNeumann.jpg" alt="Img"
+                  style="border: 0px solid; width: 213px; height:
+                  154px;"></a> </li>
+            <li> <a href="examples/scriptHelmholtz8bie.m"><img
+                  src="images/scripthelmholtz.jpg" alt="Img"
+                  style="border: 0px solid; width: 213px; height:
+                  154px;"></a> </li>
+            <li> <a href="examples/simulationTransmissionProblem.m"><img
+                  src="images/FastAndSlow.jpg" alt="Img" style="border:
+                  0px solid; width: 213px; height: 154px;"></a> </li>
+            <li> <a href="examples/simulationFDelasticity.m"><img
+                  src="images/realDirichlet.jpg" alt="Img"
+                  style="border: 0px solid; width: 213px; height:
+                  154px;"></a> </li>
+            <li> <a href="examples/scriptMixedBVP.m"><img
+                  src="images/MixedBVP.jpg" alt="Img" style="border: 0px
+                  solid; width: 213px; height: 154px;"></a> </li>
+	    <li> <a href="examples/simulationPlanewave.m"><img
+                  src="images/kite.gif" alt="Img" style="border: 0px
+                  solid; width: 213px; height: 154px;"></a> </li>
+	    <li> <a href="examples/simulationCylindricalWave.m"><img
+                  src="images/movie.gif" alt="Img" style="border: 0px
+                  solid; width: 213px; height: 154px;"></a> </li>
+	    <li> <a href="examples/scriptRKCQComprehensiveTests.m"><img
+                  src="images/RK_script.jpg" alt="Img" style="border: 0px
+                  solid; width: 213px; height: 154px;"></a> </li>
+	    <li> <a href="examples/scriptHowToUseBDFCQ.m"><img
+                  src="images/bdf_script.jpg" alt="Img" style="border: 0px
+                  solid; width: 213px; height: 154px;"></a> </li>
+          </ul>
+          <!--	<div class="click-here">
+					<h1>Lorem Ipsum Dolor!</h1>
+					<a href="index.html" class="btn1">Click Here!</a>
+				</div>
+			--> </div>
+        <div class="main">
+          <h1>Some Examples</h1>
+          <br>
+          <ul class="list">
+            <li>
+              <h4>Exterior solution of the Laplace Equation</h4>
+              <p> Two different boundary integral formulations for an
+                exterior Laplace equation are implemented. the
+                approximate solutions are compared against a known exact
+                solution. <br>
+                <a href="examples/scriptLaplace2bie.m">scriptLaplace2bie.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/scriptLaplace2bie.pdf"> Documentation</a>
+              </p>
+            </li>
+            <li>
+              <h4>Different Boundary Integral Formulations for Helmholtz
+                Equation</h4>
+              <p> This script implements eight different Boundary
+                Integral Formulations for Helmholtz equation and
+                compares the numerical approximation with an exact
+                solution. It features the basic use of geometry and
+                Calderón Calculus operators. <br>
+                <a href="examples/scriptHelmholtz8bie.m">scriptHelmholtz8bie.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/scriptHelmholtz8bie.pdf"> Documentation</a>
+                <br>
+              </p>
+            </li>
+            <li>
+              <h4>Time-harmonic scattering by two PENETRABLE obstacles
+                with different material properties</h4>
+              <p> A transmission problem for the Helmholtz equation. Two
+                bounded obstacles with different acoustic coefficients
+                interact with a plane acoustic wave. The script features
+                the merging of geometries and the "decoupled" Calderón
+                Calculus operators to deal with several independent
+                obstacles.<br>
+                <a href="examples/simulationTransmissionProblem.m">simulationTransmissionProblem.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/simulationTransmissionProblem.pdf">
+                  Documentation</a><br>
+              </p>
+            </li>
+            <li>
+              <h4>Time-Harmonic Scattering of Elastic Waves by
+                impenetrable obstacles</h4>
+              <p> A plane pressure wave is scattered by three
+                disk-shaped impenetrable objects. The script features
+                the use of the time-harmonic Navier-Lamé Calderón
+                Calculus. <br>
+                <a href="examples/simulationFDelasticity.m">simulationFDelasticity.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/simulationFDelasticity.pdf">
+                  Documentation</a> </p>
+            </li>
+            <li>
+              <h4>Acousting scattering from obstaces with different
+                boundary conditions</h4>
+              <p> An acoustic wave is scattered off a sound-hard and a
+                sound-soft obstacle. <br>
+                <a href="examples/scriptMixedBVP.m">scriptMixedBVP.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/scriptMixedBVP.pdf"> Documentation</a></p>
+            </li>
+	    <li>
+              <h4>Transient scattering of a plane wave</h4>
+              <p> An acoustic plane wave is scattered by a single kite-shaped
+	    obstacle. Here, we make use the BDF(2) based Convolution
+	    Quadrature for the computation of densities and the
+	    potential postprocessing. <br>
+                <a href="examples/simulationPlanewave.m">simulationPlanewave.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/simulationPlanewave.pdf">
+                  Documentation</a> </p>
+            </li>
+	    <li>
+              <h4>Transient scattering of a cylindrical wave</h4>
+              <p>A wave due to a point source is scattered by two
+	    elliptical obstacles. This script also demonstrates the use of
+	    CQ to approximate cylindrical waves. <br>
+                <a href="examples/simulationCylindricalWave.m">simulationCylindricalWave.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/simulationCylindricalWave.pdf">
+                  Documentation</a> </p>
+            </li>
+	   <li>
+              <h4>Convergence studies with RKCQ</h4>
+              <p>This script generates convergence studies for two
+	    different acoustic scattering problems. We couple Radau
+	    IIa CQ with deltaBEM and see order three convergence in
+	    the potential postprocessing of both examples. <br>
+                <a href="examples/scriptRKCQComprehensiveTests.m">scriptRKCQComprehensiveTests.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/scriptRKCQComprehensiveTests.pdf">
+                  Documentation</a> </p>
+            </li>
+	   <li>
+              <h4>Four integral formulations with BDF-CQ</h4>
+              <p>This script generates convergence studies for four
+	    different acoustic scattering problems from an ellipse. We
+	    demonstrate the use of deltaBEM and BDF-CQ with two direct
+	    and two indirect integral formulations.<br>
+                <a href="examples/scriptHowToUseBDFCQ.m">scriptHowToUseBDFCQ.m</a>
+                &nbsp; &nbsp; &nbsp; <a
+                  href="examples/scriptHowToUseBDFCQ.pdf">
+                  Documentation</a> </p>
+            </li>
+      
+     <li>
+          <br><br>
+          <h4>REMARK</h4>
+          <p>
+          All scripts
+            named scriptSomethingElse.m work with known exact solutions
+            and compute errors of the deltaBEM approximation. (They are
+            designed in a way that it is easy to wrap another script around
+            them for convergence analysis purposes.) Scripts named
+            simulationSomethingElse.m perform experiments on different
+            physical problems.<br>
+            
+          
+          You can download all examples and their documentation from this <a href="examples.zip">
+          link.</a> </p>
+          </il>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div id="centerline">
+      <h2>The research leading to the deltaBEM suite has been partially
+        funded by the National Science Foundation through the grant
+        NSF-DMS 1216356. Numerical simulation and analysis of transient
+        waves in unbounded domains.</h2>
+    </div>
+    <div id="footer">
+      <ul id="featured" class="wrapper clearfix">
+        <li> <img src="images/DoLuSaPaper.jpg" alt="Img" height="204"
+            width="220">
+          <h3><a href="articles.html">Research Articles</a></h3>
+          <p> The mathematics behind deltaBEM: published, ongoing and
+            related research directly from the sources. </p>
+        </li>
+        <li> <img src="images/EwingHall-A1.jpg" alt="Img" height="204"
+            width="220">
+          <h3><a href="about.html">About the Team</a></h3>
+          <p> These are some of the developers and contributors to the
+            deltaBEM effort. </p>
+        </li>
+        <li> <img src="images/ExampleCode.jpg" alt="Img" height="204"
+            width="220">
+          <h3><a href="examples.html">Examples of Use</a></h3>
+          <p> Some worked out scripts with examples of how to use the
+            deltaBEM tools to solve interior and exterior problems. </p>
+        </li>
+        <li> <img src="images/downloadarrow.jpg" alt="Img" height="204"
+            width="220">
+          <h3><a href="download.html">Download</a></h3>
+          <p> The full code, functions, geometric utilities and complete
+            documentation. </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

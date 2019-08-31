@@ -1,0 +1,39 @@
+% MATH 617 : Plots of partial sums of Fourier sine series
+% Comment/uncomment to choose what you want to see 
+
+% Starting with the coefficients
+
+N=100;                  % Number of terms of sine Fourier series 
+x=linspace(-2,2,1000);  % We will be plotting the interval (-2,2)
+%c = @(n) 2*(1-cos(n*pi/2))/(n*pi);  % Coeffs of \chi_(0,1/2)
+c = @(n) 1/n^2;                  % ... or try with different powers of n
+
+series=0;
+for n=1:N
+    series=series+c(n)*sin(n*pi*x);
+end
+plot(x,series);
+
+%%
+
+
+% Starting with the functions
+
+N=10;                  % Number of terms of sine Fourier series 
+x=linspace(0,1,400);  % We will be plotting the interval (0,1)
+f = @(x) x.*(1-x);    % This is the function
+%f = @(x) abs(x);            % ... or this one 
+
+series=0;
+for n=1:N
+    fsin = @(x) 2*f(x).*sin(n*pi*x);
+    coeff=quad(fsin,0,1);
+    series=series+coeff*sin(n*pi*x);
+end
+plot(x,series);
+
+return
+
+% For you to do ...
+%    Try with cosine Fourier series
+%    Try with sine-and-cosine Fourier series
