@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FJS Personal</title>
+    <meta name="description" content="website description">
+    <meta name="keywords" content="website keywords, website keywords">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1><a href="index.html">FJS<span class="logo_colour"> - my
+                  own stuff<br>
+                </span></a></h1>
+            <h2>The official website of Francisco-Javier Sayas and his
+              team<br>
+            </h2>
+          </div>
+        </div>
+        <nav>
+          <ul class="sf-menu" id="nav">
+            <li class="selected"><a href="index.html">Home</a></li>
+            <li><a href="fjsayas.html">The boss</a>
+              <ul>
+                <li><a href="fjsayas.html">main</a></li>
+                <li><a href="teaching">teaching</a></li>
+                <li><a href="classnotes.html">classnotes</a></li>
+                <li><a href="book.html">the roadmap</a></li>
+                <li><a href="publications.html">publication list</a></li>
+                <li><a href="personal.html">personal stuff</a></li>
+              </ul>
+            </li>
+            <li><a href="research.html">What we do</a>
+              <ul>
+                <li><a href="research.html">research</a></li>
+                <li><a href="papers.html">publications</a></li>
+                <li><a href="talks.html">conferences</a></li>
+                <li><a href="thebrick.html">the brick</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Members</a>
+              <ul>
+                <li><a href="current.html">current</a></li>
+                <li><a href="past.html">past</a></li>
+                <li><a href="summer.html">summer research</a></li>
+                <li><a href="collaborators.html">collaborators</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Software</a>
+              <ul>
+                <li><a href="deltaBEM">deltaBEM</a> </li>
+                <li><a href="HDG3D">HDG3D</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="site_content">
+        <div class="content">
+          <h3>Some personal stuff</h3>
+          <p>I've played the piano since I was in middle school. For a
+            while I spent unending hours on the keyboard. I'm not in
+            such good shape any more, but I can still play some music.
+            (Mainly classical.)<br>
+          </p>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2">
+            <tbody>
+              <tr>
+                <td valign="top" align="center"><img alt="Playing"
+                    src="images/whiteman.jpg" width="330" height="220"><br>
+                </td>
+                <td valign="top" align="center"><img alt="Yellow"
+                    src="images/yellow.JPG" width="293" height="220"></td>
+              </tr>
+              <tr>
+                <td valign="top">At John Whiteman's place (he's playing
+                  the cello) during a MAFELAP conference, some time ago.<br>
+                </td>
+                <td valign="top">I did have to sell this beauty when I
+                  left Spain. (It's an MG ZR in case you want to know.)<br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br>
+          </p>
+          <p><br>
+          </p>
+          <br>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright © CSS3_gallery_garden | <a
+            href="http://fotogrph.com/">Images</a> | <a
+            href="http://www.css3templates.co.uk">design from
+            css3templates.co.uk</a></p>
+      </footer>
+    </div>
+    <p>&nbsp;</p>
+    <!-- javascript at the bottom for fast page loading -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+    <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+    <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+  </body>
+</html>
